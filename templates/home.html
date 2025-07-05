@@ -70,7 +70,7 @@
                     }">
 
     <div class="min-h-[100dvh]">
-        <aside class="z-20 fixed  h-screen w-18 lg:w-74 border-r border-neutral-200 dark:border-neutral-800 lg:border-none transition-all duration-300 ease-in-out" :class="{ '!w-18':showDrawer }">
+        <aside class="z-20 fixed  h-screen w-18 lg:w-60 border-r border-neutral-200 dark:border-neutral-800 lg:border-none transition-all duration-300 ease-in-out" :class="{ '!w-18':showDrawer }">
             <nav class="relative h-full bg-white dark:bg-black z-10">
                 <div id="logo" class="pl-4.5 pt-5 mb-3 w-max">
                     <a href="">
@@ -107,7 +107,7 @@
                             </span>
                         </button>
 
-                        <button id="explore" class="button-nav  dark:hover:!bg-neutral-800">
+                        <button id="explore" @click="window.location.href='explore.html'" class="button-nav  dark:hover:!bg-neutral-800">
                             <div class="size-8 flex-shrink-0 ">
                                 <svg viewBox="0 0 48 48">
                                     <path d="M24 37.4a13.4 13.4 0 1 0 0-26.8 13.4 13.4 0 0 0 0 26.8ZM40.5 24a16.5 16.5 0 1 1-33 0 16.5 16.5 0 0 1 33 0Z"></path>
@@ -310,6 +310,7 @@
             </side-drawer>
         </aside>
         <main class=" h-screen w-full px-18">
+            <div class="h-full px-18">
             <article class=" h-full  mx-auto py-2 px-4 flex justify-center items-center">
                 <div class="relative bg-black max-h-full max-w-full lg:h-full rounded-2xl aspect-[9/16] flex justify-center items-center">
                     
@@ -408,6 +409,7 @@
 
 
             </scroll-bar>
+        </div>
         </main>
     </div>
     
